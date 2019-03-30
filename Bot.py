@@ -16,7 +16,7 @@ async def on_message(message):
 	author = message.author
 	content = message.content
 	print('{}: {}'.format(author, content))
-	if message.content.startswith('.ping'):
+	if message.content.startswith('.pings'):
 		await message.channel.send("Pong!")
 	elif message.content.startswith('.Hello'): 
 		await message.channel.send('Hi, How are you today ? ')

@@ -21,11 +21,4 @@ async def on_message(message):
 	elif message.content.startswith('.Hello'): 
 		await message.channel.send('Hi, How are you today ? ')
 
-@bot.event
-async def on_message_join(member):
-	for channel in member.server.channels:
-		if str(channel) == "join-and-leave":
-			await bot.message.send("""Welcome to the Server {member.mention} Hope you have a Great time here""")
-
-
 bot.run("NTYxMDUxMDQ1NzUzNjUxMjMw.D3-m0w.4JGSFXNe5jxutaxo6DmmkaKa3ig") 
